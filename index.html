@@ -22,12 +22,29 @@
         color: #000;
         font-size: 1.7rem;
       }
+      .punct {
+        color: #360;
+      }
+      @keyframes rotire-360 {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .rotire-360 {
+        animation-name: rotire-360;
+        animation-timing-function: linear;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+      }
     </style>
   </head>
   <body>
     <div class="continut centru">
-      <div class="centru">
-        <p id="email">office@paznic.ro</p>
+      <div id="email" class="centru">
+        contact<p class="rotire-360">@</p>paznic.ro
       </div>
     </div>
   </body>
